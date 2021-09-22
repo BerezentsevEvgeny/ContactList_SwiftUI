@@ -7,15 +7,20 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ListView: View {
+    var contacts: [Person]
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(contacts) { contact in
+            NavigationLink(contact.fullName) {
+                DetailView(contact: contact)
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ListView(contacts: Person.getContactList())
     }
 }

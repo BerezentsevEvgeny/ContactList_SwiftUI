@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		632472DA26FB8F0400EEB37F /* ContactsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632472D926FB8F0400EEB37F /* ContactsTabView.swift */; };
+		632472DC26FBA7C200EEB37F /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632472DB26FBA7C200EEB37F /* RowView.swift */; };
 		633120EE26FB7E6700AE57B1 /* ContactList_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633120ED26FB7E6700AE57B1 /* ContactList_SwiftUIApp.swift */; };
-		633120F026FB7E6700AE57B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633120EF26FB7E6700AE57B1 /* ContentView.swift */; };
+		633120F026FB7E6700AE57B1 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633120EF26FB7E6700AE57B1 /* ListView.swift */; };
 		633120F226FB7E6900AE57B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633120F126FB7E6900AE57B1 /* Assets.xcassets */; };
 		633120F526FB7E6900AE57B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633120F426FB7E6900AE57B1 /* Preview Assets.xcassets */; };
+		633120FC26FB7FE700AE57B1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633120FB26FB7FE700AE57B1 /* DetailView.swift */; };
+		633120FE26FB800C00AE57B1 /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633120FD26FB800C00AE57B1 /* NumbersView.swift */; };
+		6331210026FB803300AE57B1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633120FF26FB803300AE57B1 /* Person.swift */; };
+		6331210226FB803E00AE57B1 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331210126FB803E00AE57B1 /* ContactsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		632472D926FB8F0400EEB37F /* ContactsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTabView.swift; sourceTree = "<group>"; };
+		632472DB26FBA7C200EEB37F /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		633120EA26FB7E6700AE57B1 /* ContactList_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		633120ED26FB7E6700AE57B1 /* ContactList_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList_SwiftUIApp.swift; sourceTree = "<group>"; };
-		633120EF26FB7E6700AE57B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		633120EF26FB7E6700AE57B1 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		633120F126FB7E6900AE57B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		633120F426FB7E6900AE57B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		633120FB26FB7FE700AE57B1 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		633120FD26FB800C00AE57B1 /* NumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersView.swift; sourceTree = "<group>"; };
+		633120FF26FB803300AE57B1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		6331210126FB803E00AE57B1 /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		632472DD26FBA7D100EEB37F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				633120FF26FB803300AE57B1 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		632472DE26FBA7DB00EEB37F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6331210126FB803E00AE57B1 /* ContactsManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		632472DF26FBA7FD00EEB37F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				633120ED26FB7E6700AE57B1 /* ContactList_SwiftUIApp.swift */,
+				632472D926FB8F0400EEB37F /* ContactsTabView.swift */,
+				633120EF26FB7E6700AE57B1 /* ListView.swift */,
+				633120FB26FB7FE700AE57B1 /* DetailView.swift */,
+				633120FD26FB800C00AE57B1 /* NumbersView.swift */,
+				632472DB26FBA7C200EEB37F /* RowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		633120E126FB7E6700AE57B1 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +92,9 @@
 		633120EC26FB7E6700AE57B1 /* ContactList_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				633120ED26FB7E6700AE57B1 /* ContactList_SwiftUIApp.swift */,
-				633120EF26FB7E6700AE57B1 /* ContentView.swift */,
+				632472DF26FBA7FD00EEB37F /* Views */,
+				632472DE26FBA7DB00EEB37F /* Service */,
+				632472DD26FBA7D100EEB37F /* Model */,
 				633120F126FB7E6900AE57B1 /* Assets.xcassets */,
 				633120F326FB7E6900AE57B1 /* Preview Content */,
 			);
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				633120F026FB7E6700AE57B1 /* ContentView.swift in Sources */,
+				6331210026FB803300AE57B1 /* Person.swift in Sources */,
+				6331210226FB803E00AE57B1 /* ContactsManager.swift in Sources */,
+				633120F026FB7E6700AE57B1 /* ListView.swift in Sources */,
+				632472DC26FBA7C200EEB37F /* RowView.swift in Sources */,
+				633120FC26FB7FE700AE57B1 /* DetailView.swift in Sources */,
+				632472DA26FB8F0400EEB37F /* ContactsTabView.swift in Sources */,
 				633120EE26FB7E6700AE57B1 /* ContactList_SwiftUIApp.swift in Sources */,
+				633120FE26FB800C00AE57B1 /* NumbersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
