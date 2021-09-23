@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DetailView: View {
-    var contact: Person
+    let contact: Person
     
     var body: some View {
         List {

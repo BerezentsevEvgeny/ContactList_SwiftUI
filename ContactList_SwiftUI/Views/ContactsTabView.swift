@@ -11,20 +11,17 @@ struct ContactsTabView: View {
     private let contacts = Person.getContactList()
     
     var body: some View {
-        NavigationView {
-            TabView {
-                ListView(contacts: contacts)
-                    .tabItem {
-                        Image(systemName: "person.3")
-                        Text("Contacts")
-                    }
-                NumbersView(contacts: contacts)
-                    .tabItem {
-                        Image(systemName: "phone")
-                        Text("Numbers")
-                    }
-            }
-            .navigationBarTitle("Contact List")
+        TabView {
+            ListView(contacts: contacts)
+                .tabItem {
+                    Image(systemName: "person.3")
+                    Text("Contacts")
+                }
+            NumbersView(contacts: contacts)
+                .tabItem {
+                    Image(systemName: "phone")
+                    Text("Numbers")
+                }
         }
     }
 }

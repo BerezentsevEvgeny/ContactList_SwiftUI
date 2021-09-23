@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ListView: View {
-    var contacts: [Person]
+    let contacts: [Person]
     
     var body: some View {
-        List(contacts) { contact in
-            NavigationLink(contact.fullName) {
-                DetailView(contact: contact)
+        NavigationView {
+            List(contacts) { contact in
+                NavigationLink(contact.fullName) {
+                    DetailView(contact: contact)
+                }
             }
+            .navigationBarTitle("Contact List")
         }
     }
 }

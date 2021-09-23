@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct RowView: View {
-    var imageName: String
-    var text: String
+    let imageName: String
+    let text: String
     
     var body: some View {
         HStack {

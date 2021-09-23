@@ -8,16 +8,24 @@
 import SwiftUI
 
 struct NumbersView: View {
-    var contacts: [Person]
+    let contacts: [Person]
     
     var body: some View {
-        List(contacts) { contact in
-            if #available(iOS 15.0, *) {
-                Section(contact.fullName) {
-                    RowView(imageName: "phone", text: contact.phoneNumber)
-                    RowView(imageName: "tray", text: contact.email)
+        NavigationView {
+            List {
+                ForEach(contacts) { contact in
+                    if #available(iOS 15.0, *) {
+                        Section(contact.fullName) {
+                            RowView(imageName: "phone", text: contact.phoneNumber)
+                            RowView(imageName: "tray", text: contact.email)
+                        }
+                    } else {
+                        RowView(imageName: "phone", text: contact.phoneNumber)
+                        RowView(imageName: "tray", text: contact.email)
+                    }
                 }
             }
+            .navigationBarTitle("Contact List")
         }
     }
 }
